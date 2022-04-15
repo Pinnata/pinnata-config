@@ -1,6 +1,6 @@
-# `pinnata-config-registry`
+# `pinnata-config`
 
-Fetches and caches all known Pinnata positions.
+Fetches and caches Pinnata config.
 
 ## Usage
 
