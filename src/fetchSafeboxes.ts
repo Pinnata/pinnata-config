@@ -1,4 +1,4 @@
-import { ChainId } from "@dahlia-labs/token-utils";
+import { ChainId } from "@dahlia-labs/celo-contrib";
 import { getAddress } from "@ethersproject/address";
 import { AddressZero } from "@ethersproject/constants";
 import type { ContractInterface } from "@ethersproject/contracts";

@@ -1,5 +1,6 @@
+import { ChainId } from "@dahlia-labs/celo-contrib";
 import type { TokenInfo } from "@dahlia-labs/token-utils";
-import { ChainId, Token } from "@dahlia-labs/token-utils";
+import { Token } from "@dahlia-labs/token-utils";
 
 import SafeboxData from "../data/safeboxes.json";
 

@@ -1,6 +1,6 @@
+import { ChainId } from "@dahlia-labs/celo-contrib";
 import { CELO, CEUR, CUSD, MOBI, SUSHI, UBE } from "@dahlia-labs/celo-tokens";
 import type { Token } from "@dahlia-labs/token-utils";
-import { ChainId } from "@dahlia-labs/token-utils";
 import { getAddress } from "@ethersproject/address";
 
 export enum Protocol {

@@ -695,6 +695,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pinnata/pinnata-config@workspace:."
   dependencies:
+    "@dahlia-labs/celo-contrib": ^0.3.1
     "@dahlia-labs/celo-tokens": ^0.3.1
     "@dahlia-labs/token-utils": ^0.3.1
     "@ethersproject/abi": ^5.6.1

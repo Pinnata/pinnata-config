@@ -1,4 +1,4 @@
-import { ChainId } from "@dahlia-labs/token-utils";
+import { ChainId } from "@dahlia-labs/celo-contrib";
 
 import TokenFactorData from "../data/tokenFactors.json";
 

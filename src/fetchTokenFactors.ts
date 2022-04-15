@@ -1,4 +1,4 @@
-import { ChainId } from "@dahlia-labs/token-utils";
+import { ChainId } from "@dahlia-labs/celo-contrib";
 import type { JsonRpcProvider } from "@ethersproject/providers";
 import { StaticJsonRpcProvider } from "@ethersproject/providers";
 import * as fs from "fs/promises";

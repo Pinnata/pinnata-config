@@ -1,3 +1,4 @@
+import { ChainId } from "@dahlia-labs/celo-contrib";
 import {
   CELO,
   CEUR,
@@ -10,7 +11,6 @@ import {
   MOBI,
   UBE,
 } from "@dahlia-labs/celo-tokens";
-import { ChainId } from "@dahlia-labs/token-utils";
 
 export const collaterals = [
   {
