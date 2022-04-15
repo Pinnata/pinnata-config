@@ -1,0 +1,97 @@
+[
+  {
+    "underlying": {
+      "chainId": 42220,
+      "address": "0x471EcE3750Da237f93B8E339c536989b8978a438",
+      "decimals": 18,
+      "symbol": "CELO",
+      "name": "Celo native asset",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/celo.svg"
+    },
+    "pAsset": {
+      "chainId": 42220,
+      "address": "0x7a6d627b0464dd33C988AE3a99aa6372191E7EB2",
+      "decimals": 10,
+      "symbol": "dCELO",
+      "name": "Dahlia Celo",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/dcelo.svg"
+    },
+    "cToken": "0x80deb0129CA54b01Cf9f0C83A380C6f770012A80"
+  },
+  {
+    "underlying": {
+      "chainId": 42220,
+      "address": "0x765DE816845861e75A25fCA122bb6898B8B1282a",
+      "decimals": 18,
+      "symbol": "cUSD",
+      "name": "Celo Dollar",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/cusd.svg"
+    },
+    "pAsset": {
+      "chainId": 42220,
+      "address": "0xb104422F2Fbc050055671265b95E08aD6057B0B3",
+      "decimals": 10,
+      "symbol": "dcUSD",
+      "name": "Dahlia cUSD",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/dcusd.svg"
+    },
+    "cToken": "0x14834Ac9e4723Ce9146dDA7E31bD4C42C639C09F"
+  },
+  {
+    "underlying": {
+      "chainId": 42220,
+      "address": "0xD8763CBa276a3738E6DE85b4b3bF5FDed6D6cA73",
+      "decimals": 18,
+      "symbol": "cEUR",
+      "name": "Celo Euro",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/ceur.svg"
+    },
+    "pAsset": {
+      "chainId": 42220,
+      "address": "0x998BA352aD84CC0CD7E71B1Cc11Fd192D624254C",
+      "decimals": 10,
+      "symbol": "dcEUR",
+      "name": "Dahlia cEUR",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/dceur.svg"
+    },
+    "cToken": "0x3346EFd41C3631161D1cE526Bffa859b02Ce6f7a"
+  },
+  {
+    "underlying": {
+      "chainId": 42220,
+      "address": "0x73a210637f6F6B7005512677Ba6B3C96bb4AA44B",
+      "decimals": 18,
+      "symbol": "MOBI",
+      "name": "Mobius DAO Token",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/mobi.svg"
+    },
+    "pAsset": {
+      "chainId": 42220,
+      "address": "0xEfbD2788A0dea9EB959a61CE0098Be6499fB0d78",
+      "decimals": 10,
+      "symbol": "dMOBI",
+      "name": "Dahlia Mobi",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/dmobi.svg"
+    },
+    "cToken": "0xf8fe2ffd85fD6419F4cCe2bEb6c5fcf1cc3e8cFE"
+  },
+  {
+    "underlying": {
+      "chainId": 42220,
+      "address": "0x00Be915B9dCf56a3CBE739D9B9c202ca692409EC",
+      "decimals": 18,
+      "symbol": "UBE",
+      "name": "Ubeswap",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/ube.svg"
+    },
+    "pAsset": {
+      "chainId": 42220,
+      "address": "0x37a022Bd03A8b0F66ea68996410E0F70EC395C5e",
+      "decimals": 10,
+      "symbol": "dUBE",
+      "name": "Dahlia Ube",
+      "logoURI": "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/dube.svg"
+    },
+    "cToken": "0x442DA9e592fFB6ECdD789aF5132b635807347537"
+  }
+]
