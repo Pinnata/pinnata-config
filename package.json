@@ -51,6 +51,7 @@
     "typechain": "typechain --target=ethers-v5 'src/abis/*.json' --out-dir src/generated/",
     "build": "tsc && tsc --project tsconfig.cjs.json",
     "clean": "rm -fr dist/",
+    "typecheck": "tsc",
     "lint": "eslint . --cache",
     "lint:ci": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --fix",
