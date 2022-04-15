@@ -1,3 +1,3 @@
-export * from "./constants";
+export { BankAddress } from "./constants";
 export * from "./farms";
 export * from "./safeboxes";
