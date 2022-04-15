@@ -29,6 +29,8 @@ jobs:
             ${{ runner.os }}-modules-
       - name: Install Yarn dependencies
         run: yarn install
+      - run: yarn typechain
+      - run: yarn registry:sync
       - run: yarn build
       - run: |
           echo 'npmAuthToken: "${NPM_AUTH_TOKEN}"' >> .yarnrc.yml
