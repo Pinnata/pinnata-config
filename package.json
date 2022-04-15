@@ -45,7 +45,8 @@
     "lodash": "^4.17.21",
     "tiny-invariant": "^1.2.0",
     "tslib": "^2.3.1",
-    "typechain": "^8.0.0"
+    "typechain": "^8.0.0",
+    "typedoc": "^0.22.15"
   },
   "scripts": {
     "registry:sync": "ts-node src/fetch.ts",
