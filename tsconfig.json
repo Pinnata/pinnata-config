@@ -6,15 +6,12 @@
 
     "strict": true,
     "strictFunctionTypes": true,
-    "noImplicitOverride": true,
-    "esModuleInterop": true,
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "noEmit": true,
-    "lib": ["ES2019"]
+    "noEmit": true
   },
-  "include": ["src/"],
-  "exclude": ["src/generated/"]
+  "exclude": ["src/generated/*"],
+  "include": ["src/"]
 }
