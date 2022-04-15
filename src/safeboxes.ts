@@ -1,5 +1,5 @@
-import { ChainId, Token } from "@dahlia-labs/token-utils";
 import type { TokenInfo } from "@dahlia-labs/token-utils";
+import { ChainId, Token } from "@dahlia-labs/token-utils";
 
 import SafeboxData from "../data/safeboxes.json";
 
