@@ -1,7 +1,6 @@
 {
   "name": "@pinnata/pinnata-config",
   "version": "0.1.1",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Pinnata/pinnata-config.git"
@@ -26,6 +25,12 @@
     "ts-node": "10.7.0",
     "typescript": "^4.5.2"
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "dependencies": {
     "@dahlia-labs/celo-contrib": "^0.3.1",
     "@dahlia-labs/celo-tokens": "^0.3.1",
