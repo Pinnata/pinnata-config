@@ -32,32 +32,40 @@ export const fetchTokenFactors = async (): Promise<void> => {
   const oracleContract = useProxyOracleContract(provider, oracle);
   invariant(oracleContract);
 
-  const getTokenFactors = async (tokenAddress: string) =>
-    await oracleContract.tokenFactors(tokenAddress);
+  const getTokenFactors = async (
+    tokenAddress: string
+  ): Promise<TokenFactors> => {
+    const factors = await oracleContract.tokenFactors(tokenAddress);
+    return {
+      borrowFactor: factors.borrowFactor,
+      collateralFactor: factors.collateralFactor,
+      liqIncentive: factors.liqIncentive,
+    };
+  };
 
   const tokenFactorMap: TokenFactorMap = (
     await Promise.all(
       Safeboxes[ChainId.Mainnet].map(async (s) => ({
-        [s.underlying.address]: (await getTokenFactors(
-          s.underlying.address
-        )) as TokenFactors,
+        [s.underlying.address]: await getTokenFactors(s.underlying.address),
       }))
     )
   )
     .concat(
       await Promise.all(
         Farms[ChainId.Mainnet].map(async (f) => ({
-          [f.lp]: (await getTokenFactors(f.lp)) as TokenFactors,
+          [f.lp]: await getTokenFactors(f.lp),
         }))
       )
     )
     .reduce(
-      (acc, cur) => ({
+      (acc: TokenFactorMap, cur: TokenFactorMap) => ({
         ...acc,
         ...cur,
       }),
       {}
     );
+
+  console.log(tokenFactorMap);
 
   await fs.writeFile(
     "data/tokenFactors.json",

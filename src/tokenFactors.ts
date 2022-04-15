@@ -1,3 +1,7 @@
+import { ChainId } from "@dahlia-labs/token-utils";
+
+import TokenFactorData from "../data/tokenFactors.json";
+
 export interface TokenFactors {
   borrowFactor: number;
   collateralFactor: number;
@@ -7,3 +11,9 @@ export interface TokenFactors {
 export interface TokenFactorMap {
   [tokenAddress: string]: TokenFactors;
 }
+
+export const Safeboxes: { [chainId in ChainId]: TokenFactorMap } = {
+  [ChainId.Mainnet]: TokenFactorData,
+  [ChainId.Alfajores]: {},
+  [ChainId.Baklava]: {},
+};
