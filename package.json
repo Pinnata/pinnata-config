@@ -15,7 +15,7 @@
     "@types/bn.js": "^5.1.0",
     "@types/eslint": "^8.4.1",
     "@types/lodash": "^4.14.181",
-    "@types/node": "16.11.10",
+    "@types/node": "16.11.27",
     "@types/prettier": "^2.6.0",
     "eslint": "^8.13.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -23,7 +23,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
     "prettier": "^2.6.2",
-    "ts-node": "10.4.0",
+    "ts-node": "10.7.0",
     "typescript": "^4.5.2"
   },
   "dependencies": {
@@ -38,6 +38,7 @@
     "@ethersproject/providers": "^5.6.4",
     "@saberhq/tsconfig": "^1.12.60",
     "@typechain/ethers-v5": "^10.0.0",
+    "@yarnpkg/doctor": "^4.0.0-rc.2",
     "bn.js": "^5.2.0",
     "ethers": "^5.6.4",
     "jsbi": "^4.2.1",
@@ -54,7 +55,8 @@
     "lint:ci": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --fix",
     "docs:generate": "typedoc --excludePrivate --includeVersion --out site/ts/ src/index.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "doctor:packages": "yarn doctor packages/"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
