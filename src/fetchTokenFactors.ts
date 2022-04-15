@@ -22,7 +22,7 @@ function useProxyOracleContract(
   ) as ProxyOracle | null;
 }
 
-const fetchTokenFactors = async (): Promise<void> => {
+export const fetchTokenFactors = async (): Promise<void> => {
   const provider = new StaticJsonRpcProvider("https://forno.celo.org");
 
   const bankContract = useBankContract(provider);
@@ -70,7 +70,3 @@ const fetchTokenFactors = async (): Promise<void> => {
     } token factors`
   );
 };
-
-fetchTokenFactors().catch((err) => {
-  console.error(err);
-});

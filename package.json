@@ -43,7 +43,7 @@
     "typechain": "^8.0.0"
   },
   "scripts": {
-    "registry:sync": "ts-node src/fetchSafeboxes.ts && ts-node src/fetchTokenFactors.ts",
+    "registry:sync": "ts-node src/fetch.ts",
     "typechain": "typechain --target=ethers-v5 'src/abis/*.json' --out-dir src/generated/",
     "prepare": "husky install"
   },

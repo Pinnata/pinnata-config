@@ -56,7 +56,7 @@ export function useBankContract(provider: JsonRpcProvider): HomoraBank | null {
   ) as HomoraBank | null;
 }
 
-const fetchSafeboxes = async (): Promise<void> => {
+export const fetchSafeboxes = async (): Promise<void> => {
   const provider = new StaticJsonRpcProvider("https://forno.celo.org");
 
   const bankContract = useBankContract(provider);
@@ -78,7 +78,3 @@ const fetchSafeboxes = async (): Promise<void> => {
 
   console.log(`Discovered and wrote ${safeboxes.length} safeboxes`);
 };
-
-fetchSafeboxes().catch((err) => {
-  console.error(err);
-});
