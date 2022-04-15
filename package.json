@@ -1,10 +1,12 @@
 {
-  "name": "@dahlia-labs/pinnata-config",
-  "private": true,
-  "version": "1.0.0",
+  "name": "@pinnata/pinnata-config",
+  "version": "0.0.0",
   "main": "index.js",
-  "repository": "git@github.com:senchahq/sencha-registry.git",
-  "author": "Johanna Johansson <jj@sencha.so>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Pinnata/pinnata-config.git"
+  },
+  "author": "Kyle Scott <kyle@dahlia.finance>",
   "license": "AGPL-3.0",
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
@@ -50,5 +52,13 @@
   "lint-staged": {
     "*.ts": "eslint --cache --fix",
     "*.{md,json,js,yml,yaml}": "prettier --write"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Fetches and caches all known Pinnata positions.",
+  "bugs": {
+    "url": "https://github.com/Pinnata/pinnata-config/issues"
+  },
+  "homepage": "https://github.com/Pinnata/pinnata-config#readme"
 }
