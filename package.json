@@ -74,7 +74,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "Fetches and caches all known Pinnata positions.",
+  "description": "Fetches and caches Pinnata config.",
   "bugs": {
     "url": "https://github.com/Pinnata/pinnata-config/issues"
   },
