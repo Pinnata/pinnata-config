@@ -1,11 +1,12 @@
 {
-  "extends": "@saberhq/tsconfig/tsconfig.react.json",
+  "extends": "@saberhq/tsconfig/tsconfig.lib.json",
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "CommonJS",
-
+    "lib": ["ES2015", "DOM"],
+    "outDir": "dist/esm/",
+    "rootDir": "src/",
+    "noEmit": false,
     "resolveJsonModule": true
   },
-  "exclude": ["src/generated/*"],
-  "include": ["src/"]
+  "include": ["./src"],
+  "exclude": ["./src/generated"]
 }

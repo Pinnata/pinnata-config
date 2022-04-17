@@ -74,7 +74,10 @@ export const fetchSafeboxes = async (): Promise<void> => {
     })
   );
 
-  await fs.writeFile("data/safeboxes.json", JSON.stringify(safeboxes, null, 2));
+  await fs.writeFile(
+    "src/data/safeboxes.json",
+    JSON.stringify(safeboxes, null, 2)
+  );
 
   console.log(`Discovered and wrote ${safeboxes.length} safeboxes`);
 };

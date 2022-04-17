@@ -1,6 +1,6 @@
 import { ChainId } from "@dahlia-labs/celo-contrib";
 
-import TokenFactorData from "../data/tokenFactors.json";
+import TokenFactorData from "./data/tokenFactors.json";
 
 export interface TokenFactors {
   borrowFactor: number;
