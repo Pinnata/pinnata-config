@@ -32,9 +32,9 @@
     "src/"
   ],
   "dependencies": {
-    "@dahlia-labs/celo-contrib": "^0.3.2",
-    "@dahlia-labs/celo-tokens": "^0.3.2",
-    "@dahlia-labs/token-utils": "^0.3.2",
+    "@dahlia-labs/celo-contrib": "^0.3.3",
+    "@dahlia-labs/celo-tokens": "^0.3.3",
+    "@dahlia-labs/token-utils": "^0.3.3",
     "@ethersproject/abi": "^5.6.1",
     "@ethersproject/address": "^5.6.0",
     "@ethersproject/bignumber": "^5.6.0",
