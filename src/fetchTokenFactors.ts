@@ -66,7 +66,7 @@ export const fetchTokenFactors = async (): Promise<void> => {
     );
 
   await fs.writeFile(
-    "data/tokenFactors.json",
+    "src/data/tokenFactors.json",
     JSON.stringify(tokenFactorMap, null, 2)
   );
 

@@ -1,6 +1,6 @@
 {
   "name": "@pinnata/pinnata-config",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Configuration for the Pinnata protocol",
   "repository": {
     "type": "git",
@@ -52,6 +52,7 @@
     "@typechain/ethers-v5": "^10.0.0",
     "@yarnpkg/doctor": "^4.0.0-rc.2",
     "bn.js": "^5.2.0",
+    "cross-env": "^7.0.3",
     "ethers": "^5.6.4",
     "jsbi": "^4.2.1",
     "lodash": "^4.17.21",
@@ -61,7 +62,7 @@
     "typedoc": "^0.22.15"
   },
   "scripts": {
-    "registry:sync": "ts-node src/fetch.ts",
+    "registry:sync": "cross-env TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' ts-node src/fetch.ts",
     "typechain": "typechain --target=ethers-v5 'src/abis/*.json' --out-dir src/generated/",
     "build": "tsc && tsc --project tsconfig.cjs.json",
     "clean": "rm -fr dist/",
