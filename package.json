@@ -1,6 +1,6 @@
 {
   "name": "@pinnata/pinnata-config",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Pinnata/pinnata-config.git"
