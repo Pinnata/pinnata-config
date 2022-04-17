@@ -1,5 +1,2 @@
-/build/
 /dist/
-/*.js
-/test/unit/coverage/
 src/generated

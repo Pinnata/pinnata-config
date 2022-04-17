@@ -1,8 +1,9 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
-  extends: ["@saberhq"],
+  extends: ["@saberhq/eslint-config"],
   parserOptions: {
+    tsconfigRootDir: __dirname,
     project: "tsconfig.json",
   },
 };

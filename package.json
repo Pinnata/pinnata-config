@@ -1,10 +1,16 @@
 {
   "name": "@pinnata/pinnata-config",
   "version": "0.2.2",
+  "description": "Configuration for the Pinnata protocol",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Pinnata/pinnata-config.git"
   },
+  "keywords": [
+    "celo",
+    "blockchain",
+    "pinnata"
+  ],
   "author": "Kyle Scott <kyle@dahlia.finance>",
   "license": "AGPL-3.0",
   "packageManager": "yarn@3.2.0",
@@ -74,7 +80,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "Fetches and caches Pinnata config.",
   "bugs": {
     "url": "https://github.com/Pinnata/pinnata-config/issues"
   },
