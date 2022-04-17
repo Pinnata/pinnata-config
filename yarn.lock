@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 5
+  version: 6
   cacheKey: 8
 
 "@algolia/cache-browser-local-storage@npm:4.13.0":
@@ -162,21 +162,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dahlia-labs/celo-contrib@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@dahlia-labs/celo-contrib@npm:0.3.1"
+"@dahlia-labs/celo-contrib@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@dahlia-labs/celo-contrib@npm:0.3.2"
   dependencies:
     tslib: ^2.3.1
-  checksum: 702b435b99fba1a3de03aa02ff1996617e1e0af62fcf85859e254b9fe14b180e02265ab11085c281b9f9ae5381508388cc033a2e7b0b7de341e0f2d1919ec42a
+  checksum: 344d0a1b54db9590650fe3fa82af65560dd8d15437b6f402fda0587cd9ef0482fcce74b3181d6d9027d2c0886c534231f7b79eb8ffefb3507e37353c695fd0e4
   languageName: node
   linkType: hard
 
-"@dahlia-labs/celo-tokens@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@dahlia-labs/celo-tokens@npm:0.3.1"
+"@dahlia-labs/celo-tokens@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@dahlia-labs/celo-tokens@npm:0.3.2"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.3.1
-    "@dahlia-labs/token-utils": ^0.3.1
+    "@dahlia-labs/celo-contrib": ^0.3.2
+    "@dahlia-labs/token-utils": ^0.3.2
     "@ubeswap/token-math": ^4.4.6
     lodash.mapvalues: ^4.6.0
     tiny-invariant: ^1.2.0
@@ -184,22 +184,22 @@ __metadata:
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: 2a0be564a6951da1d14aea7d3268c858e80afa03d350c4d60aac4835f3e54064fef4f15e2ecb9ca1426f40b36c1fa1e2b3edbaa6f8c4c71175fe2cea09fb094b
+  checksum: fdea28f61529f3b2fff56f9e65c92be53d741b26be82ed7d55b1b424e04925fb1744480de6580da94d7c5a9eb2b4e079576e8c59920d07354a5894245af2553e
   languageName: node
   linkType: hard
 
-"@dahlia-labs/token-utils@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@dahlia-labs/token-utils@npm:0.3.1"
+"@dahlia-labs/token-utils@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@dahlia-labs/token-utils@npm:0.3.2"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.3.1
+    "@dahlia-labs/celo-contrib": ^0.3.2
     "@ubeswap/token-math": ^4.4.6
     tiny-invariant: ^1.2.0
     tslib: ^2.3.1
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: 43710083a895180fbffa0b7a3b4f88ff07057b3eb891e32559e44509cacb94df5911751b2332213568cfa28b8895f4e262903a515c81167ebbbc1861adb2b8da
+  checksum: d99e163ad3bde785b6c0d6367f39f8ba8718927a6f25041bacdeeb6c2af6150ae8bab960533740eb4694176a2319d239b8692e9bdc6541d1f01a9f7a5b05a95e
   languageName: node
   linkType: hard
 
@@ -695,9 +695,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pinnata/pinnata-config@workspace:."
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.3.1
-    "@dahlia-labs/celo-tokens": ^0.3.1
-    "@dahlia-labs/token-utils": ^0.3.1
+    "@dahlia-labs/celo-contrib": ^0.3.2
+    "@dahlia-labs/celo-tokens": ^0.3.2
+    "@dahlia-labs/token-utils": ^0.3.2
     "@ethersproject/abi": ^5.6.1
     "@ethersproject/address": ^5.6.0
     "@ethersproject/bignumber": ^5.6.0
@@ -730,7 +730,7 @@ __metadata:
     tslib: ^2.3.1
     typechain: ^8.0.0
     typedoc: ^0.22.15
-    typescript: ^4.5.2
+    typescript: 4.5.5
   languageName: unknown
   linkType: soft
 
@@ -5232,6 +5232,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:4.5.5":
+  version: 4.5.5
+  resolution: "typescript@npm:4.5.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 506f4c919dc8aeaafa92068c997f1d213b9df4d9756d0fae1a1e7ab66b585ab3498050e236113a1c9e57ee08c21ec6814ca7a7f61378c058d79af50a4b1f5a5e
+  languageName: node
+  linkType: hard
+
 "typescript@npm:4.7.0-beta":
   version: 4.7.0-beta
   resolution: "typescript@npm:4.7.0-beta"
@@ -5242,33 +5252,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.5.2":
-  version: 4.5.2
-  resolution: "typescript@npm:4.5.2"
+"typescript@patch:typescript@4.5.5#~builtin<compat/typescript>":
+  version: 4.5.5
+  resolution: "typescript@patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
+  checksum: 858c61fa63f7274ca4aaaffeced854d550bf416cff6e558c4884041b3311fb662f476f167cf5c9f8680c607239797e26a2ee0bcc6467fbc05bfcb218e1c6c671
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@4.7.0-beta#~builtin<compat/typescript>":
   version: 4.7.0-beta
-  resolution: "typescript@patch:typescript@npm%3A4.7.0-beta#~builtin<compat/typescript>::version=4.7.0-beta&hash=493e53"
+  resolution: "typescript@patch:typescript@npm%3A4.7.0-beta#~builtin<compat/typescript>::version=4.7.0-beta&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 1c965eee339d6008535b08b5fdd6e4227aeede2e042df5dca8aaa02d468c146a2c33d3a62ec0600c093f3cea2db6b98528b424d951f6536734c1db116a066057
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^4.5.2#~builtin<compat/typescript>":
-  version: 4.5.2
-  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 53838d56aba6fcc947d63aa0771e5d966b1b648fddafed6e221d7f38c71219c4e036ece8cfe9e35ed80cf5a35ff4eb958934c993f99c3233773ec4f9ccd53f69
   languageName: node
   linkType: hard
 
