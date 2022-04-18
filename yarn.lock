@@ -162,21 +162,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dahlia-labs/celo-contrib@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "@dahlia-labs/celo-contrib@npm:0.3.3"
+"@dahlia-labs/celo-contrib@npm:^0.3.4":
+  version: 0.3.4
+  resolution: "@dahlia-labs/celo-contrib@npm:0.3.4"
   dependencies:
     tslib: ^2.3.1
-  checksum: 2c98dca6b9b0f4e2eff5dbc3e607ad09730e33af3611754b71fd92247982e5c9a8fc9f1741878e58b0695f73743d61f746a1f4632268dda5642510badbde6238
+  checksum: 0029d8eea17fd1fdd532a6a3a40918b3e1f152783fdaab053ab2948f964df0ab6384a4ccb52e4b1714a2a23870393478644a00144a593d2ade63ca8065540359
   languageName: node
   linkType: hard
 
-"@dahlia-labs/celo-tokens@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "@dahlia-labs/celo-tokens@npm:0.3.3"
+"@dahlia-labs/celo-tokens@npm:^0.3.4":
+  version: 0.3.4
+  resolution: "@dahlia-labs/celo-tokens@npm:0.3.4"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.3.3
-    "@dahlia-labs/token-utils": ^0.3.3
+    "@dahlia-labs/celo-contrib": ^0.3.4
+    "@dahlia-labs/token-utils": ^0.3.4
     "@ubeswap/token-math": ^4.4.6
     lodash.mapvalues: ^4.6.0
     tiny-invariant: ^1.2.0
@@ -184,22 +184,22 @@ __metadata:
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: bde74f5302d9e9c26e61d1fea6929374e2e9998057cadf76e5cc677ecf4b10baf123aae8b568f45165220e918d47bd68e2e7dcc910f2737dc3a4f0c3d062819f
+  checksum: 4ad7cadb1b3d3f74c44985afae65080a1f9ebc202949cfd2f1030d83a061e14fc2bf51791946cd8f60e9fa13fe36123460d102176b7d5a32a8b78b704491999c
   languageName: node
   linkType: hard
 
-"@dahlia-labs/token-utils@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "@dahlia-labs/token-utils@npm:0.3.3"
+"@dahlia-labs/token-utils@npm:^0.3.4":
+  version: 0.3.4
+  resolution: "@dahlia-labs/token-utils@npm:0.3.4"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.3.3
+    "@dahlia-labs/celo-contrib": ^0.3.4
     "@ubeswap/token-math": ^4.4.6
     tiny-invariant: ^1.2.0
     tslib: ^2.3.1
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: 1fc2dff06434c614a71b1b39b4b99475a1831332516488f3a89e8fa4216c1a6ca08968de12d3974c056b3b8c957c3ff28c7d1ab0fbd9cc36d9466bc125568459
+  checksum: b4bd514ee85ad04479e5c97bb9e9eefc6fae6024a39fd1c6ae3f94cd788ec8ebb360096e10c8d2bf9e11a905e0f524117e83f1131f0208e0f333a08ac88c199b
   languageName: node
   linkType: hard
 
@@ -695,9 +695,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@pinnata/pinnata-config@workspace:."
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.3.3
-    "@dahlia-labs/celo-tokens": ^0.3.3
-    "@dahlia-labs/token-utils": ^0.3.3
+    "@dahlia-labs/celo-contrib": ^0.3.4
+    "@dahlia-labs/celo-tokens": ^0.3.4
+    "@dahlia-labs/token-utils": ^0.3.4
     "@ethersproject/abi": ^5.6.1
     "@ethersproject/address": ^5.6.0
     "@ethersproject/bignumber": ^5.6.0
