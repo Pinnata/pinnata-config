@@ -8,10 +8,10 @@ import { StaticJsonRpcProvider } from "@ethersproject/providers";
 import * as fs from "fs/promises";
 import invariant from "tiny-invariant";
 
-import HOMORA_BANK_ABI from "./abis/HomoraBank.json";
-import { BankAddress, collaterals } from "./constants";
-import type { HomoraBank } from "./generated";
-import type { ISafebox } from "./safeboxes";
+import HOMORA_BANK_ABI from "../abis/HomoraBank.json";
+import { BankAddress, collaterals } from "../constants";
+import type { HomoraBank } from "../generated";
+import type { ISafebox } from "../safeboxes";
 
 // returns the checksummed address if the address is valid, otherwise returns false
 function isAddress(value: string): string | false {

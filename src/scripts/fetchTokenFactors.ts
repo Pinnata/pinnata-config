@@ -4,12 +4,12 @@ import { StaticJsonRpcProvider } from "@ethersproject/providers";
 import * as fs from "fs/promises";
 import invariant from "tiny-invariant";
 
-import PROXY_ORACLE_ABI from "./abis/ProxyOracle.json";
-import { Farms } from "./farms";
+import PROXY_ORACLE_ABI from "../abis/ProxyOracle.json";
+import { Farms } from "../farms";
+import type { ProxyOracle } from "../generated";
+import { Safeboxes } from "../safeboxes";
+import type { TokenFactorMap, TokenFactors } from "../tokenFactors";
 import { useBankContract, useContract } from "./fetchSafeboxes";
-import type { ProxyOracle } from "./generated";
-import { Safeboxes } from "./safeboxes";
-import type { TokenFactorMap, TokenFactors } from "./tokenFactors";
 
 function useProxyOracleContract(
   provider: JsonRpcProvider,
