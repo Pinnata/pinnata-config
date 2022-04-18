@@ -62,7 +62,7 @@
     "typedoc": "^0.22.15"
   },
   "scripts": {
-    "registry:sync": "cross-env TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' ts-node src/fetch.ts",
+    "registry:sync": "cross-env TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' ts-node src/scripts/fetch.ts",
     "typechain": "typechain --target=ethers-v5 'src/abis/*.json' --out-dir src/generated/",
     "build": "tsc && tsc --project tsconfig.cjs.json",
     "clean": "rm -fr dist/",
