@@ -7,5 +7,6 @@
 .pnp.*
 
 dist/
+src/generated/
 
 .eslintcache
