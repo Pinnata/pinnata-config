@@ -8,7 +8,7 @@ import PROXY_ORACLE_ABI from "../abis/ProxyOracle.json";
 import { Farms } from "../farms";
 import type { ProxyOracle } from "../generated";
 import { Safeboxes } from "../safeboxes";
-import type { TokenFactorMap, TokenFactors } from "../tokenFactors";
+import type { TokenFactor, TokenFactorMap } from "../tokenFactors";
 import { useBankContract, useContract } from "./fetchSafeboxes";
 
 function useProxyOracleContract(
@@ -34,7 +34,7 @@ export const fetchTokenFactors = async (): Promise<void> => {
 
   const getTokenFactors = async (
     tokenAddress: string
-  ): Promise<TokenFactors> => {
+  ): Promise<TokenFactor> => {
     const factors = await oracleContract.tokenFactors(tokenAddress);
     return {
       borrowFactor: factors.borrowFactor,

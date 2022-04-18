@@ -2,17 +2,17 @@ import { ChainId } from "@dahlia-labs/celo-contrib";
 
 import TokenFactorData from "./data/tokenFactors.json";
 
-export interface TokenFactors {
+export interface TokenFactor {
   borrowFactor: number;
   collateralFactor: number;
   liqIncentive: number;
 }
 
 export interface TokenFactorMap {
-  [tokenAddress: string]: TokenFactors;
+  [tokenAddress: string]: TokenFactor;
 }
 
-export const Safeboxes: { [chainId in ChainId]: TokenFactorMap } = {
+export const TokenFactors: { [chainId in ChainId]: TokenFactorMap } = {
   [ChainId.Mainnet]: TokenFactorData,
   [ChainId.Alfajores]: {},
   [ChainId.Baklava]: {},
