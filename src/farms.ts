@@ -50,8 +50,8 @@ export type IFarm = {
 };
 
 export class UbeExternalRewards {
-  multistaking: IMSR;
-  constructor({ multistaking }: { multistaking: IMSR }) {
+  multistaking: IMSR[];
+  constructor({ multistaking }: { multistaking: IMSR[] }) {
     this.multistaking = multistaking;
   }
 }
@@ -59,32 +59,39 @@ export class UbeExternalRewards {
 export type IMSR = {
   address: string;
   rewardsToken: Token;
-  externalRewarder: IMSR | null;
+  externalRewarder: string | null;
 };
 
-const MobiMSR: IMSR = {
-  address: getAddress("0xb450940c5297e9b5e7167FAC5903fD1e90b439b8"),
-  rewardsToken: CELO[ChainId.Mainnet],
-  externalRewarder: {
+const MobiMSR: IMSR[] = [
+  {
+    address: getAddress("0xb450940c5297e9b5e7167FAC5903fD1e90b439b8"),
+    rewardsToken: CELO[ChainId.Mainnet],
+    externalRewarder: getAddress("0xd930501A0848DC0AA3E301c7B9b8AFE8134D7f5F"),
+  },
+  {
     address: getAddress("0xd930501A0848DC0AA3E301c7B9b8AFE8134D7f5F"),
     rewardsToken: MOBI[ChainId.Mainnet],
-    externalRewarder: {
-      address: getAddress("0x19F1A692C77B481C23e9916E3E83Af919eD49765"),
-      rewardsToken: UBE[ChainId.Mainnet],
-      externalRewarder: null,
-    },
+    externalRewarder: getAddress("0x19F1A692C77B481C23e9916E3E83Af919eD49765"),
   },
-};
+  {
+    address: getAddress("0x19F1A692C77B481C23e9916E3E83Af919eD49765"),
+    rewardsToken: UBE[ChainId.Mainnet],
+    externalRewarder: null,
+  },
+];
 
-const UbeMSR: IMSR = {
-  address: getAddress("0x9D87c01672A7D02b2Dc0D0eB7A145C7e13793c3B"),
-  rewardsToken: CELO[ChainId.Mainnet],
-  externalRewarder: {
+const UbeMSR: IMSR[] = [
+  {
+    address: getAddress("0x9D87c01672A7D02b2Dc0D0eB7A145C7e13793c3B"),
+    rewardsToken: CELO[ChainId.Mainnet],
+    externalRewarder: getAddress("0x295D6f96081fEB1569d9Ce005F7f2710042ec6a1"),
+  },
+  {
     address: getAddress("0x295D6f96081fEB1569d9Ce005F7f2710042ec6a1"),
     rewardsToken: UBE[ChainId.Mainnet],
     externalRewarder: null,
   },
-};
+];
 
 export type SushiChef = {
   address: string;

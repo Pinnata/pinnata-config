@@ -1,6 +1,6 @@
 {
   "name": "@pinnata/pinnata-config",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Configuration for the Pinnata protocol",
   "repository": {
     "type": "git",
