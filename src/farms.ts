@@ -49,9 +49,12 @@ export type IFarm = {
   externalRewards: SushiExternalRewards | UbeExternalRewards;
 };
 
-export type UbeExternalRewards = {
+export class UbeExternalRewards {
   multistaking: IMSR;
-};
+  constructor({ multistaking }: { multistaking: IMSR }) {
+    this.multistaking = multistaking;
+  }
+}
 
 export type IMSR = {
   address: string;
@@ -104,10 +107,14 @@ const sushiChefV2: SushiChef = {
   externalRewardsToken: CELO[ChainId.Mainnet],
 };
 
-export type SushiExternalRewards = {
+export class SushiExternalRewards {
   id: string;
   sushiChef: SushiChef;
-};
+  constructor({ id, sushiChef }: { id: string; sushiChef: SushiChef }) {
+    this.id = id;
+    this.sushiChef = sushiChef;
+  }
+}
 
 export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
   [ChainId.Mainnet]: [
@@ -119,10 +126,10 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       lp: getAddress("0x0b655E7D966CB27998af94AA5719ab7BFe07D3b3"),
       underlying: [CEUR[ChainId.Mainnet], CUSD[ChainId.Mainnet]],
 
-      externalRewards: {
+      externalRewards: new SushiExternalRewards({
         id: "3",
         sushiChef: sushiChefV1,
-      },
+      }),
     },
     {
       protocol: Protocol.SushiSwap,
@@ -132,10 +139,10 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       lp: getAddress("0x0b655E7D966CB27998af94AA5719ab7BFe07D3b3"),
       underlying: [CUSD[ChainId.Mainnet], CEUR[ChainId.Mainnet]],
 
-      externalRewards: {
+      externalRewards: new SushiExternalRewards({
         id: "3",
         sushiChef: sushiChefV2,
-      },
+      }),
     },
     {
       protocol: Protocol.SushiSwap,
@@ -145,10 +152,10 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       lp: getAddress("0x8ecded81a2abf3b7e724978060739edbeb01b24f"),
       underlying: [CELO[ChainId.Mainnet], MOBI[ChainId.Mainnet]],
 
-      externalRewards: {
+      externalRewards: new SushiExternalRewards({
         id: "8",
         sushiChef: sushiChefV2,
-      },
+      }),
     },
     {
       protocol: Protocol.Ubeswap,
@@ -158,9 +165,9 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       lp: getAddress("0x0b81cf47c8f97275d14c006e537d5101b6c87300"),
       underlying: [CELO[ChainId.Mainnet], MOBI[ChainId.Mainnet]],
 
-      externalRewards: {
+      externalRewards: new UbeExternalRewards({
         multistaking: MobiMSR,
-      },
+      }),
     },
     {
       protocol: Protocol.Ubeswap,
@@ -170,9 +177,9 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       lp: getAddress("0xe7b5ad135fa22678f426a381c7748f6a5f2c9e6c"),
       underlying: [CELO[ChainId.Mainnet], UBE[ChainId.Mainnet]],
 
-      externalRewards: {
+      externalRewards: new UbeExternalRewards({
         multistaking: UbeMSR,
-      },
+      }),
     },
   ],
   [ChainId.Alfajores]: [],
