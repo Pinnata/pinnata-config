@@ -18,13 +18,13 @@ export interface DisplayProtocol {
 const Ubeswap: DisplayProtocol = {
   name: "Ubeswap",
   color: "#8878c3",
-  logo: "UbeswapLogo",
+  logo: "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/ube.svg",
   url: "https://ubeswap.org",
 };
 
 const sushiProtocolInfo = {
   color: "#0993ec",
-  logo: "SushiLogo",
+  logo: "https://raw.githubusercontent.com/DahliaLabs/dahlia-common/master/packages/celo-tokens/src/svgs/sushi.svg",
   url: "https://sushi.com",
 };
 
@@ -101,7 +101,7 @@ export type SushiChef = {
 };
 
 const sushiChefV1: SushiChef = {
-  address: getAddress("0xE583FeC0B218bB89CbB24d76D2A6D901E082DAAA"),
+  address: getAddress("0x0769fd68dFb93167989C6f7254cd0D766Fb2841F"),
   rewardsToken: SUSHI[ChainId.Mainnet],
   externalRewarder: getAddress("0x1be211d8da40bc0ae8719c6663307bfc987b1d6c"),
   externalRewardsToken: CELO[ChainId.Mainnet],
@@ -131,7 +131,7 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       wrapper: getAddress("0xE583FeC0B218bB89CbB24d76D2A6D901E082DAAA"),
       spell: getAddress("0x4163A7dB783D3d6d761Bd9060EcDe42D1C2D8c74"),
       lp: getAddress("0x0b655E7D966CB27998af94AA5719ab7BFe07D3b3"),
-      underlying: [CEUR[ChainId.Mainnet], CUSD[ChainId.Mainnet]],
+      underlying: [CUSD[ChainId.Mainnet], CEUR[ChainId.Mainnet]],
 
       externalRewards: new SushiExternalRewards({
         id: "3",
@@ -182,7 +182,7 @@ export const Farms: { [chainId in ChainId]: readonly IFarm[] } = {
       wrapper: getAddress("0x1B9dF6fd569778f48E7db3eB000C93a80920EA23"),
       spell: getAddress("0x7B775b2AF169D1249db545Cd89754D3C70FAd069"),
       lp: getAddress("0xe7b5ad135fa22678f426a381c7748f6a5f2c9e6c"),
-      underlying: [CELO[ChainId.Mainnet], UBE[ChainId.Mainnet]],
+      underlying: [UBE[ChainId.Mainnet], CELO[ChainId.Mainnet]],
 
       externalRewards: new UbeExternalRewards({
         multistaking: UbeMSR,
